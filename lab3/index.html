@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+        }
+        th, td{
+            padding: 10px 20px;
+            border: 1px solid #000;
+        }
+        #ct{
+        	width: 100%;
+        }
+        #ct1{
+        	width: 100%;
+        }
+        #ct2{
+        	width: 100%;
+        }
+      	#del{
+      		width: 90%;
+      	}
+      	#rn{
+      		width: 9.75%;
+      	}
+    </style>
+
+</head>
+<body >
+	<div class="buttons">
+	  <input id="ct" value="Создать таблицу" onclick="createMainTable()" type="button">
+	  <input id="ct1" value="Добавить строку"  onclick="createRow()" type="button" disabled>
+	  <form id="del2">
+	  	<input id="del" value="Удалить строку" onclick="deleteRow()" type="reset" disabled>
+            <label for="rownum"><input name="rownum" id="rn" type="text" placeholder="№" pattern="^[0-9]+$" disabled></label>
+	  </form>
+	</div>
+	<div id="tablemain">
+	</div>
+<script src="test.js"></script>  
+</body>
+</html>
